@@ -6,7 +6,7 @@ Config.LicenseRank = 2
 Config.ArmoryWhitelist = {}
 Config.WhitelistedVehicles = {}
 Config.PoliceHelicopter = 'POLMAV'
-Config.FuelResource = 'LegacyFuel' -- supports any that has a GetFuel() and SetFuel() export
+Config.FuelResource = 'ps-fuel' -- supports any that has a GetFuel() and SetFuel() export
 
 Config.AmmoLabels = {
     AMMO_PISTOL = '9x19mm parabellum bullet',
@@ -27,40 +27,27 @@ Config.Objects = {
 
 Config.Locations = {
     duty = {
-        vector3(440.085, -974.924, 30.689),
-        vector3(-449.811, 6012.909, 31.815),
+
     },
     vehicle = {
-        vector4(448.159, -1017.41, 28.562, 90.654),
-        vector4(471.13, -1024.05, 28.17, 274.5),
-        vector4(-455.39, 6002.02, 31.34, 87.93),
     },
     stash = {
-        vector3(453.075, -980.124, 30.889),
+        vector3(1830.12, 3670.49, 34.2),
+        vector3(452.62, -979.38, 30.69),
     },
     impound = {
-        vector3(436.68, -1007.42, 27.32),
-        vector3(-436.14, 5982.63, 31.34),
     },
     helicopter = {
-        vector4(449.168, -981.325, 43.691, 87.234),
-        vector4(-475.43, 5988.353, 31.716, 31.34),
     },
     trash = {
-        vector3(439.0907, -976.746, 30.776),
     },
     fingerprint = {
-        vector3(460.9667, -989.180, 24.92),
     },
     evidence = {
-        vector3(442.1722, -996.067, 30.689),
-        vector3(451.7031, -973.232, 30.689),
-        vector3(455.1456, -985.462, 30.689),
+        vector3(1821.53, 3669.28, 34.19),
+        vector3(474.62, -996.2, 26.27),
     },
     stations = {
-        { label = 'Police Station',        coords = vector4(428.23, -984.28, 29.76, 3.5) },
-        { label = 'Prison',                coords = vector4(1845.903, 2585.873, 45.672, 272.249) },
-        { label = 'Police Station Paleto', coords = vector4(-451.55, 6014.25, 31.716, 223.81) },
     },
 }
 
@@ -104,7 +91,7 @@ Config.SecurityCameras = {
     },
 }
 
-Config.EnableRadars = true -- alerts for flagged plates
+Config.EnableRadars = false -- alerts for flagged plates
 Config.Radars = {
     vector3(1051.42, 331.11, 84.00),
     vector3(544.43, -373.24, 33.14),
@@ -121,20 +108,6 @@ Config.CarItems = {
     [1] = { name = 'heavyarmor', amount = 2, info = {}, type = 'item', slot = 1, },
     [2] = { name = 'empty_evidence_bag', amount = 10, info = {}, type = 'item', slot = 2, },
     [3] = { name = 'police_stormram', amount = 1, info = {}, type = 'item', slot = 3, },
-}
-
-Config.AuthorizedVehicles = {
-    -- Grade 0 and higher
-    [0] = {
-        police = 'Police Car 1',
-        police2 = 'Police Car 2',
-        police3 = 'Police Car 3',
-        police4 = 'Police Car 4',
-        policeb = 'Police Car 5',
-        policet = 'Police Car 6',
-        sheriff = 'Sheriff Car 1',
-        sheriff2 = 'Sheriff Car 2',
-    },
 }
 
 Config.VehicleSettings = {

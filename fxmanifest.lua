@@ -1,8 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
-author 'Kakarot'
-description 'Provides police tools, evidence, job and more functionality for players to use as a cop'
+author 'NormanSoftware & Kakarot(QB-PoliceJob)'
+description 'PD Evidence stash and lockers Based Upon QB-PoliceJob'
 version '1.3.5'
 
 shared_scripts {
@@ -17,14 +17,8 @@ client_scripts {
 	'@PolyZone/BoxZone.lua',
 	'@PolyZone/ComboZone.lua',
 	'client/main.lua',
-	'client/camera.lua',
 	'client/interactions.lua',
 	'client/job.lua',
-	'client/heli.lua',
-	'client/anpr.lua',
-	'client/evidence.lua',
-	'client/objects.lua',
-	'client/tracker.lua'
 }
 
 server_scripts {
@@ -32,9 +26,6 @@ server_scripts {
 	'server/main.lua',
 	'server/commands.lua',
 	'server/interactions.lua',
-	'server/evidence.lua',
-	'server/objects.lua',
-	'server/vehicle.lua',
 }
 
 ui_page 'html/index.html'
